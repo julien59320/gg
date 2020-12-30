@@ -1,0 +1,370 @@
+/*-----general-------*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+@font-face {
+    font-family: "fira_sansbook";
+    src: url("Fonts/firasans-book-webfont.woff2") format("woff2"),
+         url("Fonts/firasans-book-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    margin-top: 10px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 50px ;
+}
+
+strong {
+    color: rgb(98,98,98);
+}
+
+h3{
+    font-size: 20px;  
+}
+
+h4 {
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+span {
+    border-bottom: 3px solid rgb(98,98,98);
+    text-decoration-color: rgb(98,98,98);
+}
+/*-----ceci_est_mon_contenaire-----*/
+body {
+    max-width: 1190px;
+    margin: auto;
+   font-family: "fira_sansbook"; 
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------Entête---------*/
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: beige; 
+}
+
+.Nom{
+    margin-top: 110px;
+    margin-bottom: 120px;
+    padding-left:  5%;
+    width: 67.7%;
+}
+
+/*-------------photo-----------*/
+.photo {
+    text-align: center;
+    width: 32.3%;
+    background-color: rgb(98,98,98)
+}
+
+img {
+    width: 210px;
+    height: 210px;
+    margin-top: 63px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 10px beige ;   
+}
+
+section {
+    display: flex;
+}
+
+/*-------------Partie_de_gauche------------------*/
+.left_part {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: rgb(98, 98, 98);
+    width: 32.3%
+}
+
+nav {
+    margin-bottom: 40px;
+    margin-top: 12px;
+}
+
+li {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+a{ /* Liens par défaut (non survolés) */
+   text-decoration: none;
+   color: white;
+   font-style: italic;
+}
+
+a:hover{ /* Apparence au survol des liens */
+    color: red;
+    text-decoration: underline
+}
+
+em {
+    opacity: 0.8;
+    line-height: 10px;
+}
+
+h3.tittle_left {
+    background-color: beige;
+    color: rgb(98, 98, 98);
+    text-align: center;
+    height: 47px;
+    font-size: 25px;
+    padding: 10px
+}
+
+.description_left {
+    margin: 10%;
+    margin-top: 35px;
+    max-width:   80%;
+    word-wrap: break-word;
+    height: 670px;
+}
+/*-------------Parties icônes------------*/
+aside {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 40px;   
+}
+
+.icone {
+    height: 64px;
+    width: 64px;
+    border: 1px solid beige;
+    box-shadow: 3px 3px 10px 1px beige;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 40px;
+}
+
+.icone:nth-child(1){
+    margin-left: 12%;
+}
+
+.icone:nth-child(3){
+    margin-right: 12%;
+}
+
+/*--------Partie_de_droite---------*/
+.right_part {
+    display: flex;
+    flex-direction: column;
+    width: 67.7%;
+    padding-left: 5%;
+    background-color: beige;
+}
+
+
+/*---partie_formation/expreriences-----*/
+.categorie_right {
+    border-bottom: 2px solid grey;
+    display:flex;
+    font-size: 40px;
+    margin-right: 37px;
+}
+
+.fa-graduation-cap {
+    color: rgb(98,98,98);
+}
+
+.fa-handshake {
+    color: rgb(98,98,98);
+}
+
+.fa-diagnoses{
+    color: rgb(98,98,98);
+}
+
+.tittle_right {
+    display: flex;
+    margin-left: 37px;
+}
+
+article{
+    display: flex;   
+}
+
+.date {
+    display: flex;
+    margin-top: 50px;
+    height: 20%;
+    width: 35%;
+}
+.fa-dot-circle {
+    padding-right: 20px;
+    color: rgb(98,98,98);
+}
+.fa-circle{
+    padding-right: 20px;
+    font-size: 10px;
+    color: rgb(98,98,98);
+}
+
+.description_right {
+    margin-top: 50px;
+    margin-right: 6%;
+    width: 65%;   
+}
+
+.text{
+    margin-bottom: 70px;
+}
+/*----recommandations---*/
+.recommandations {
+    display: flex;
+    padding-top: 30px;
+}
+
+.seconde_section {
+    margin: auto;
+} 
+
+@media screen and (max-width:768px) {
+/*------media_query_petit-ecran --------*/   
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2{
+        margin: auto;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    /*---ceci-est-mon-header---*/
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(98,98,98);   
+    }
+    
+    strong {
+        color: beige
+    }
+    
+    .photo{
+        width: 100%;
+        order:2 ;
+        margin: auto;
+    }
+    
+    img{
+        margin-top: 20px
+    }
+   
+    .Nom{
+        order:1;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    /*---partie-de-droite---*/
+    .left_part {
+        width: 100%;
+    }
+    
+    .description_left{
+        height: auto;
+    }
+    
+    ul {
+        text-align: center;
+        padding: 0px;
+    }
+     /*---partie-de-gauche----*/
+    .right_part {
+        width: 100%;
+        padding: 0px;
+    } 
+    
+    header {
+         text-align: center;
+    }
+    
+    .fa-dot-circle {
+        visibility: hidden;
+        padding: 0px;
+        width: 0px;
+    }
+    
+    .fa-circle{
+        visibility: hidden;
+        padding: 0px;
+        width: 0px
+    }
+    
+    .categorie_right{
+        margin: auto;
+        align-items: center;
+    }
+    h2{
+        font-size: 22px
+    }
+    
+    article {
+        display: flex;
+        flex-direction: column; 
+        margin: auto; 
+    }
+   
+    .date {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin:  10px 0px;
+        color: beige;
+        background-color: grey;
+        width:100% ;
+        height: 50px;
+    }
+    
+    .description_right {
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    } 
+    
+    .text {
+        margin-bottom: 40px;
+    }
+    /*----footer----*/
+    footer{
+        text-align: center;
+    }
+    
+    .recommandations {
+        margin-bottom:30px;
+        padding-left: 12%;
+    }
+}
+@media screen and (max-width:425px) {
+    .recommandations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .seconde_section {
+        margin-top: 10px;
+    }
+}
